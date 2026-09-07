@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Fixxy</title>
+  <desc id="desc">Deterministic fixed-point numbers and 2D vectors.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#23394a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="#102431"/>
+  <rect x="760" width="440" height="320" fill="url(#grid)"/>
+  <path d="M832 248H1120M832 248V48" fill="none" stroke="#537185" stroke-width="2"/>
+  <path d="M832 248L1056 88M1035 90L1056 88L1048 108" fill="none" stroke="#7ce5ba" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1056 88V248" stroke="#7ce5ba" stroke-width="2" stroke-dasharray="5 7" opacity="0.5"/>
+  <circle cx="832" cy="248" r="6" fill="#7ce5ba"/>
+  <text x="64" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="92" font-weight="700" letter-spacing="-3" fill="#eff8fb">fixxy</text>
+  <text x="68" y="202" font-family="Segoe UI,Arial,sans-serif" font-size="25" fill="#b8d0dc">Fixed-point numbers. 2D vectors.</text>
+  <text x="68" y="266" font-family="Consolas,monospace" font-size="18" fill="#7ce5ba">Q16.16 / Nim</text>
+</svg>
