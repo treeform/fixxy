@@ -25,4 +25,7 @@ jobs:
       - run: nim r tests/tests.nim
       - run: nim r -d:release tests/tests.nim
       - run: nim r -d:fixedChecks tests/tests.nim
+      - run: nim r -d:danger tests/tests.nim
+      - name: Test C++ determinism
+        run: nim cpp -r -d:release tests/tests.nim
       - run: nim r examples/movement.nim

@@ -1,6 +1,7 @@
 import
   std/[math, strutils, unittest],
-  fixxy
+  fixxy,
+  test_determinism
 
 proc reference(value: Fixed): float64 =
   ## Returns the exact value of a fixed-point number for comparison.
