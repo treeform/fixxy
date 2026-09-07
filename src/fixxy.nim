@@ -3,7 +3,8 @@
 ## A `Fixed` value is one `int32` holding a signed 16.16 number: the high 16
 ## bits are the whole part and the low 16 bits are the fraction, so the value
 ## is simply the integer divided by 65536. The range is -32768 to just under
-## 32768 and the resolution is 1/65536, about 0.0000153.
+## 32768, with a step size of about 0.00001526 (exactly 1/65536).
+## Text output rounds values to five decimal places.
 ##
 ## The layout is plain two's complement, not a pair of separate 16-bit fields.
 ## That is what makes addition, subtraction, negation, and comparison identical
@@ -53,7 +54,7 @@ const
   FixedOne* = Fixed(FixedScale)
   FixedHalf* = Fixed(FixedScale div 2)
   FixedEpsilon* = Fixed(1)
-    ## Smallest representable step, 1/65536.
+    ## Smallest representable step, about 0.00001526 (exactly 1/65536).
   FixedMaximum* = Fixed(high(int32))
     ## Largest value, just under 32768.
   FixedMinimum* = Fixed(low(int32))

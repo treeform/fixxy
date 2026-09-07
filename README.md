@@ -38,7 +38,8 @@ requires "https://github.com/treeform/fixxy"
 ## Numbers
 
 `Fixed` stores a signed Q16.16 value in one `int32`. Its range is -32768 to
-32767.9999847412109375, with a resolution of 1/65536.
+just under 32768, with a step size of about 0.00001526 (exactly 1/65536).
+Text output rounds values to five decimal places.
 
 - Construct whole numbers with `fixed(3)` and decimals with `1.5'fx`.
 - Parse decimal strings with `parseFixed`. Invalid input raises `FixxyError`,
